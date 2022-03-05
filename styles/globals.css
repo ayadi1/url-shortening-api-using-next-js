@@ -8,6 +8,8 @@
   --Very-Dark-Blue: hsl(255, 11%, 22%);
   --Very-Dark-Violet: hsl(260, 8%, 14%);
   --menu-icon: url("/images/icon-hamburger.svg");
+  --desktop-form-bg: url("/images/bg-boost-desktop.svg");
+  --mobile-form-bg: url("/images/bg-boost-mobile.svg");
 }
 * {
   margin: 0;
@@ -40,3 +42,9 @@ body {
   left: -130%;
 }
 /* menu classes end */
+
+/* err style for input start */
+.errStyleForInput{
+  border: 2px solid var(--Red);
+}
+/* err style for input end */

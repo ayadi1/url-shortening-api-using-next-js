@@ -1,7 +1,3 @@
-.header {
-}
-.logo {
-}
 .mainNav {
   display: flex;
   align-items: center;
@@ -17,8 +13,6 @@
 .header nav ul {
   display: flex;
   gap: 20px;
-}
-.header nav ul li {
 }
 .header nav ul li a {
   color: var(--Grayish-Violet);
@@ -80,6 +74,8 @@
   cursor: pointer;
   display: none;
   background-image: var(--menu-icon);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 30px;
   height: 30px;
 }
