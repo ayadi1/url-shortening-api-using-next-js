@@ -2,27 +2,57 @@ import styles from "../../styles/header.module.css";
 import Image from "next/image";
 import logo from "../../images/logo.svg";
 import illustrationWorking from "../../images/illustration-working.svg";
+import { useState } from "react";
+
 export default function Header() {
+  // const [showMenu, setShowMenu] = useState(false);
+  let showMenu = false;
+  const showHadeMenu = () => {
+    const navMobile = document.getElementById("navMobile");
+    if (showMenu) {
+      navMobile.classList.add("showMenu");
+      navMobile.classList.remove("hadeMenu");
+      showMenu = !showMenu;
+    } else {
+      navMobile.classList.add("hadeMenu");
+      navMobile.classList.remove("showMenu");
+      showMenu = !showMenu;
+    }
+  };
   return (
     <header className={styles.header}>
       <div className="container">
-        <nav>
-          <Image className={styles.logo}  alt="logo" src={logo} />
-          <ul>
-            <li>
+        <div className={styles.mainNav}>
+          <nav>
+            <Image className={styles.logo} alt="logo" src={logo} />
+            <ul>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <div className={styles.btns}>
+            <button>Login</button>
+            <button>Sign Up</button>
+          </div>
+          <div onClick={showHadeMenu} className={styles.menuIcon}></div>
+          <div id="navMobile" className={styles.navMobile}>
+            <div className={styles.links}>
               <a href="#">Features</a>
-            </li>
-            <li>
               <a href="#">Pricing</a>
-            </li>
-            <li>
               <a href="#">Resources</a>
-            </li>
-          </ul>
-        </nav>
-        <div className={styles.btns}>
-          <button>Login</button>
-          <button>Sign Up</button>
+            </div>
+            <div className={styles.hr}></div>
+            <div className={styles.navMobileBtns}>
+              <button>Sign Up</button>
+            </div>
+          </div>
         </div>
         <div className={styles.headerContent}>
           <div className={styles.content}>
