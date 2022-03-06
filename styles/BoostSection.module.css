@@ -1,6 +1,35 @@
 .BoostSection {
+  background-color: var(--Dark-Violet);
+  background-image: var(--desktop-form-bg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 .BoostSection h5 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
 }
 .BoostSection button {
+  border: none;
+  background-color: var(--Cyan);
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.BoostSection button:hover {
+  background-color: hsl(180, 83%, 61%);
+}
+/* media style  */
+@media screen and (max-width: 790px) {
+  .BoostSection {
+    background-image: var(--mobile-form-bg);
+  }
 }

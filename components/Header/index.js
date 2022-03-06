@@ -2,11 +2,9 @@ import styles from "../../styles/header.module.css";
 import Image from "next/image";
 import logo from "../../images/logo.svg";
 import illustrationWorking from "../../images/illustration-working.svg";
-import { useState } from "react";
 
 export default function Header() {
-  // const [showMenu, setShowMenu] = useState(false);
-  let showMenu = false;
+  let showMenu = true;
   const showHadeMenu = () => {
     const navMobile = document.getElementById("navMobile");
     if (showMenu) {

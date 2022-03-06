@@ -1,12 +1,16 @@
 import styles from "../../styles/footer.module.css";
 import Image from "next/image";
 import logo from "../../images/logo.svg";
+import facebookIcon from "../../images/icon-facebook.svg";
+import instagramIcon from "../../images/icon-instagram.svg";
+import pinrerestIcon from "../../images/icon-pinterest.svg";
+import twitterIcon from "../../images/icon-twitter.svg";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <Image alt="logo" src={logo} className={styles.logo} />
         <div className={styles.lists}>
+          <Image alt="logo" src={logo} className={styles.logo} />
           <ul className={styles.mainList}>
             <li>
               <h5>Features</h5>
@@ -54,6 +58,20 @@ export default function Footer() {
               </ul>
             </li>
           </ul>
+          <div className={styles.socialMediaIcons}>
+            <a href="https://www.facebook.com/ossama.ayadi.9">
+              <Image alt="facebookIcon" src={facebookIcon} />
+            </a>
+            <a href="https://www.instagram.com/hv.ew/">
+              <Image alt="instagramIcon" src={instagramIcon} />
+            </a>
+            <a href="#">
+              <Image alt="pinrerestIcon" src={pinrerestIcon} />
+            </a>
+            <a href="https://twitter.com/ayadioo">
+              <Image alt="twitterIcon" src={twitterIcon} />
+            </a>
+          </div>
         </div>
         <div className={styles.me}>
           coded by{" "}

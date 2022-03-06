@@ -152,6 +152,7 @@
   /* form style start */
   .form {
     padding: 30px;
+    background-image: var(--mobile-form-bg);
   }
   .inputs {
     flex-direction: column;
