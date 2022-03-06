@@ -44,7 +44,13 @@ body {
 /* menu classes end */
 
 /* err style for input start */
-.errStyleForInput{
+.errStyleForInput {
   border: 2px solid var(--Red);
+}
+.showErrMessage {
+  display: block !important;
+}
+.hadeErrMessage {
+  display: none !important;
 }
 /* err style for input end */

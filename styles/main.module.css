@@ -46,6 +46,7 @@
 }
 .errMessage {
   margin-top: 5px;
+  display: none;
   color: var(--Red);
 }
 .list {
