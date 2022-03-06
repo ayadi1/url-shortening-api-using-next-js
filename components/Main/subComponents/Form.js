@@ -22,7 +22,7 @@ export default function Form() {
       errMessage.classList.remove("showErrMessage");
       const newId = new Date().getMilliseconds();
       setUrls((old) => {
-        return [...old, { url: inputData, id: newId }];
+        return [{ url: inputData, id: newId }, ...old];
       });
       setInputData("");
     }
