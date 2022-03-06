@@ -7,6 +7,20 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta property="og:title" content="url shortening api" />
+        <meta property="og:type" content="url shortening api" />
+        <meta
+          property="og:url"
+          content="https://raw.githubusercontent.com/ayadi1/url-shortening-api-using-next-js/main/design/desktop-preview.jpg?token=GHSAT0AAAAAABR6U5DT62IPT6J2WM3Y2YPUYRN6KSQ"
+        />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/ayadi1/url-shortening-api-using-next-js/main/design/desktop-preview.jpg?token=GHSAT0AAAAAABR6U5DT62IPT6J2WM3Y2YPUYRN6KSQ"
+        />
+        <meta
+          name="twitter:image"
+          content="https://raw.githubusercontent.com/ayadi1/url-shortening-api-using-next-js/main/design/desktop-preview.jpg?token=GHSAT0AAAAAABR6U5DT62IPT6J2WM3Y2YPUYRN6KSQ"
+        />
         <link
           rel="icon"
           type="image/png"
