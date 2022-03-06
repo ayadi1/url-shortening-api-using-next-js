@@ -1,6 +1,6 @@
 # Frontend Mentor - Shortly URL shortening API Challenge
 
-- live preview link :
+- live preview link : https://url-shortening-api-using-next-js.vercel.app/
   ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
